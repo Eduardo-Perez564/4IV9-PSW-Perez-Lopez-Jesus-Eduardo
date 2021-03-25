@@ -1,0 +1,38 @@
+*{
+    padding:0;
+    margin: 0;
+    color: rgb(19, 6, 6);
+    text-align: center;
+
+}
+
+html, body{
+    background-color: rgb(12, 201, 116);
+
+}
+
+.main-container{
+    border: 10px solid rgb(175, 33, 151);
+    border-radius: 20px;
+    margin: 1rem;
+    background-color: rgb(235, 47, 235)
+
+}
+
+nav,section, footer, article, aside{
+    border: 2px solid rgb(138, 189, 0)
+    margin= 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+aside, article{
+    width: 40%;
+    display:inline-block;
+    height: 350px;
+    background-color: rgb(32,73,213);
+}
+
+nav, section, footer{
+    background-color: rgb(0, 189, 180)
+}
