@@ -7,7 +7,7 @@
 }
 
 html, body{
-    background-color: rgb(12, 201, 116);
+    background-color: rgb(255, 255, 255);
 
 }
 
@@ -28,11 +28,12 @@ nav,section, footer, article, aside{
 
 aside, article{
     width: 40%;
-    display:inline-block;
+    display: inline-block;
+    font-size: 20px;
     height: 350px;
-    background-color: rgb(32,73,213);
+    background-color: rgb(32, 213, 183);
 }
 
 nav, section, footer{
-    background-color: rgb(0, 189, 180)
+    background-color: rgb(255, 255, 255)
 }
