@@ -1,0 +1,73 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
+body{
+	font-family: "Comic Sans MS";
+	color: black;
+	font-size: 20px;
+
+}
+
+.Header{
+	background-color: black;
+	color: white;
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	padding: 1.5rem;
+}
+
+header a{
+	color: white;
+	text-decoration: none;
+}
+.nav-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.navigation ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+	.navigation ul li{
+		display:inline-block;
+	}
+		.navigation ul li a{
+			display:block;
+			padding: 05.rem 1rem;
+			padding-bottom: .2rem;
+		}
+			.navigation ul li a:hover{
+				background: #065d85;
+			}
+
+.Inicio {
+	letter-spacing: 8px;
+	font-size: 2rem;
+	padding: 1rem;
+}
+.nav-container a:hover{
+	background: #065d85;
+}
+
+.main{
+	margin: 5rem;
+	padding: 5rem;
+}
+
+.main .container .info .vinculo h3{
+	margin-top: 70px;
+	padding-top: 70px;
+}
+
+footer{
+	background: black;
+	text-align: right;
+	color: white;
+	
+}
