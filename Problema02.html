@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 02 JS</title>
+    <link rel="stylesheet" href="./CSS/BarraNavegacion.css">
+    <link rel="stylesheet" href="./CSS/problemasjs.css">
+    <script src="./JS/problema02.js"></script>
+</head>
+<body>
+    
+    <header>
+        <nav class="navegacion">
+            <ul>
+                <li class="item"><a href="index.html">Inicio</a></li>
+                <li class="item">
+                    <!--Este es un menu desplegable para los problemas de JS-->
+                    <a href=#>Problemas JS</a>
+                    <ul class="desplegable">
+                        <li><a href="Problema01.html"><br>Problema 1</a></li>
+                        <li><a href="Problema02.html"><br>Problema 2</a></li>
+                        <li><a href="Problema03.html"><br>Problema 3</a></li>
+                        <li><a href="Problema04.html"><br>Problema 4</a></li>
+                        <li><a href="Problema05.html"><br>Problema 5</a></li>
+                        <li><a href="Problema06.html"><br>Problema 6</a></li>
+                        <li><a href="Problema07.html"><br>Problema 7</a></li>
+                        <li><a href="Problema08.html"><br>Problema 8</a></li>
+                        <li><a href="Problema09.html"><br>Problema 9</a></li>
+                        <li><a href="Problema10.html"><br>Problema 10<br></a></li>
+                    </ul>
+                </li>
+                <!--Informacion-->
+                <li class="item"><a href=#>Trabajos de clase</a>
+                    <ul class="desplegable">
+                        <li><a href="Animaciones.html"><br>Animaciones</a></li>
+                        <li><a href="Hover.html"><br>Hover</a></li>
+                        <li><a href="ColoresHover.html"><br>Hover de Colores<br></a></li>
+                    </ul>
+                </li>
+
+                <li class="item"><a href=#>Tareas</a>
+                    <ul class="desplegable">
+                        <li><a href="Hobbies.html"><br>Hobbies</a></li>
+                        <li><a href="formulario.html"><br>Validaciones<br></a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <div class="inicio">
+        <div class="Cuerpo">
+            <h3>Enunciado del problema 2</h3>
+            <br>
+            Un vendedor recibe un sueldo base mas un 10% extra por comisión
+            de sus ventas, el vendeor desea saber cuanto dinero obtendrá por 
+            concepto de comisiones por tres ventas que realiza en el mes y el 
+            total que recibirá en el mes tomando en cuenta su sueldo base y 
+            comisiones.
+        </div>
+    </div>
+    
+    <div class="Cuerpo">
+        <form method="POST" name="formulario">
+
+            <table>
+
+                <tr>
+                    <td>Ingresa tu sueldo base</td>
+                    <td><input type="text" name="sueldobase" onkeypress=""></td>
+                </tr>
+                <tr>
+                    <td>Ingresa las ventas que realizaste en el mes</td>
+                    <td><input type="text" name="ventas" onkeypress=""></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Obtener Sueldo" name="enviar"></td>
+                </tr>
+                <tr>
+                    <td>Total a recibir por comisiones</td>
+                    <td><input type="text" readonly="readonly"></td>
+                </tr>
+                <tr>
+                    <td>Total a Recibir</td>
+                    <td><input type="text" readonly="readonly"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="Borrar" name="borrardatos"
+                        onkeypress=""></td>
+                </tr>
+
+            </table>
+
+        </form>
+    </div>
+
+    <footer class="Footer">
+        <br>
+        <a href="formulario.html">Regreso al Formulario Principal</a>
+        <br>
+    </footer>
+    
+</body>
+</html>
