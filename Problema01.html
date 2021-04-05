@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 1 JS</title>
+    <link rel="stylesheet" href="./CSS/problemasjs.css">
+    <script src="./JS/problema01.js" ></script>
+</head>
+<body>
+    
+    
+    <div class="Cuerpo">
+         Suponga que un idividuo desea invertir su capital en un banco y
+         desea saber cuanto dinero ganará después de un mes si el banco le paga
+         a razón de 2% mensual.
+    </div>
+    <div class="Cuerpo">
+        <form method="GET" name="formulario" >
+
+            <table>
+                <tr>
+                    <td class="td_sup">Introduce la cantidad a invertir: $</td>
+                    <td class="td_inf">
+                        <input type="text" name="cantidad" onkeypress="return validarn(event)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Seleccione el numero de meses a invertir</td>
+                    <td>
+                        <select name="meses">
+    
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+    
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="td_inf">
+                        <input type="button" value="interes" name="enviar" 
+                        onclick="interes()" >
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td_sup">Su saldo total con interés al 2% es:</td>
+                    <td>
+                        <input type="text" name="sueldoti" id="cantidadi" 
+                        readonly="readonly" class="input_text">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="td_down">
+                        <input type="button" name="borrard" value="Borrar" 
+                        onclick="borrar()">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    
+    <footer class="Footer">
+        <br>
+        <a href="formulario.html">Regreso al Formulario Principal</a>
+        <br>
+    </footer>
+
+    
+
+</body>
+</html>
