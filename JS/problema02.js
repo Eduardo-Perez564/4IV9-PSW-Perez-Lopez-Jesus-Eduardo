@@ -14,16 +14,13 @@ function validarn(e){
 
 function Salario(){
     //obtenemos los valores del formulario y los parseamos
-    var salario1 = document.formulario.sueldobase.value;
-    var ventas1 = document.formulario.ventas.value;
-
-    var salario2 = parseInt(salario1);
-    var ventas2 = parseInt(ventas1);
+    var salario1 = parseInt(document.formulario.sueldobase.value);
+    var ventas1 = parseInt(document.formulario.ventas.value);
     
     //obtenemos sus comisones y salario total
-    var comisiones = salario2*.1;
-    var totalcomisiones = comisiones*ventas2;
-    var sueldototal = salario2+totalcomisiones;
+    var comisiones = salario1*.1;
+    var totalcomisiones = comisiones*ventas1;
+    var sueldototal = salario1+totalcomisiones;
 
     //Se lo regresamos al usuario
     document.formulario.ComisionesTotales.value = "$" + totalcomisiones;
