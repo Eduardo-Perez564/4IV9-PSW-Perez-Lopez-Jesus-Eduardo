@@ -51,7 +51,7 @@
     </header>
 
     <div class="Cuerpo">
-        <h3></h3>
+        <h3>Problema 9</h3>
         <br>
         Determinar la cantidad de dinero que recibira un trabajador por concepto de las horas 
         extras trabajadas en una empresa, sabiendo que cuando las horas de trabajo exceden de 
@@ -65,10 +65,10 @@
             <table>
                 <tr>
                     <td>
-                        Ingresa tu sueldo base: $
+                        Ingresa tu sueldo por hora: $
                     </td>
                     <td>
-                        <input type="text" name="sueldo" onkeypress="">
+                        <input type="text" name="sueldo" onkeypress="return validarn(event)">
                     </td>
                 </tr>
                 <tr>
@@ -76,14 +76,14 @@
                         Ingresa las horas trabajadas:
                     </td>
                     <td>
-                        <input type="text" name="sueldo" onkeypress="">
+                        <input type="text" name="Horas" onkeypress="return validarn(event)">
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
                         <input type="button" value="Calcular Sueldo" name="enviar"
-                        onclick="">
+                        onclick="Calcular_Sueldo()">
                     </td>
                 </tr>
                 <tr>
@@ -91,14 +91,14 @@
                         Sueldo:
                     </td>
                     <td>
-                        <input type="text" name="sueldoneto" onkeypress="">
+                        <input type="text" name="Total" readonly="readonly">
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
-                        <input type="button" value="borrar" name="borar"
-                        onclick="">
+                        <input type="button" value="Borrar" name="borard"
+                        onclick="borrar()">
                     </td>
                 </tr>
             </table>
