@@ -7,7 +7,7 @@
     <title>Problemas JS</title>
     <link rel="stylesheet" href="./CSS/BarraNavegacion.css">
     <link rel="stylesheet" href="./CSS/problemasjs.css">
-    <script src="./JS/problema09.js"></script>
+    <script src="./JS/problema10.js"></script>
 </head>
 <body>
     
@@ -89,32 +89,33 @@
                 <tr>
                     <td>Ingresa tu salario mensual:</td>
                     <td>
-                        <input type="text" name="salario" onkeypress="">
+                        <input type="text" name="salario" onkeypress="return validarn(event)">
                     </td>
                 </tr>
                 <tr>
-                    <td>Ingresa tu antigüedad en la empresa:</td>
+                    <td>Ingresa tu antigüedad en la empresa en años:</td>
                     <td>
-                        <input type="text" name="salario" onkeypress="">
+                        <input type="text" name="tiempo" onkeypress="return validarn(event)">
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
-                        <input type="button" value="Calcular utilidad" name="enviar">
+                        <input type="button" value="Calcular utilidad" name="enviar"
+                        onclick="Calcular_Utilidades()">
                     </td>
                 </tr>
                 <tr>
                     <td>Utilidades:</td>
                     <td>
-                        <input type="text" name="salario" readonly="readonly">
+                        <input type="text" name="utilidades" readonly="readonly">
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
                         <input type="button" value="Borrar" name="borrard"
-                        onclick="">
+                        onclick="borrar()">
                     </td>
                 </tr>
             </table>
