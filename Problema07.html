@@ -63,37 +63,42 @@
                 <tr>
                     <td>Dame el primer número</td>
                     <td>
-                        <input type="text" name="primero" onkeypress="">
+                        <input type="text" name="primero" onkeypress="return validarn(event)">
                     </td>
                 </tr>
                 <tr>
                     <td>Dame el segundo número</td>
                     <td>
-                        <input type="text" name="segundo" onkeypress="">
+                        <input type="text" name="segundo" onkeypress="return validarn(event)">
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
                         <input type="button" value="Realizar operación" name="enviar"
-                        onclick="">
+                        onclick="Operaciones()">
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
-                        <input type="text" name="resultado" readonly="readonly">
+                        <input type="text" name="Resultado_Operacion" readonly="readonly">
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
-                        <input type="button" value="Borrar" name="borrar"
-                        onclick="">
+                        <input type="button" value="Borrar" name="borrard"
+                        onclick="borrar()">
                     </td>
                 </tr>
             </table>
         </form>
     </div>
+
+    <footer>
+        <br>
+        <a href="formulario.html">Regreso al formulario principal</a>
+    </footer>
 </body>
 </html>
