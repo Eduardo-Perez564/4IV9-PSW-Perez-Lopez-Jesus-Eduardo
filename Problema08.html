@@ -7,7 +7,7 @@
     <title>Problemas JS</title>
     <link rel="stylesheet" href="./CSS/BarraNavegacion.css">
     <link rel="stylesheet" href="./CSS/problemasjs.css">
-    <script src="./JS/problema07.js"></script>
+    <script src="./JS/problema08.js"></script>
 </head>
 <body>
     
@@ -61,36 +61,39 @@
                 <tr>
                     <td>Dame el primer número</td>
                     <td>
-                        <input type="text" name="uno" onkeypress="">
+                        <input type="text" name="uno" onkeypress="return valirdarn(event)">
                     </td>
                 </tr>
                 <tr>
                     <td>Dame el segundo número</td>
                     <td>
-                        <input type="text" name="dos" onkeypress="">
+                        <input type="text" name="dos" onkeypress="return valirdarn(event)">
                     </td>
                 </tr>
                 <tr>
                     <td>Dame el tercer número</td>
                     <td>
-                        <input type="text" name="tres" onkeypress="">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="button" value="Calcular el Mayor" name="enviar">
+                        <input type="text" name="tres" onkeypress="return valirdarn(event)">
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
-                        <input type="text" name="Mayor" readonly="readonly">
+                        <input type="button" value="Calcular el Mayor" name="enviar"
+                        onclick="Mayor()">
+                    </td>
+                </tr>
+                <tr>
+                    <td>El número mayor es :</td>
+                    <td>
+                        <input type="text" name="Numero_Mayor" readonly="readonly">
                     </td>
                 </tr>
                 <tr>
                     <td></td>
                     <td>
-                        <input type="button" name="borrar" onclick="">
+                        <input type="button" value="Borrar" name="borrard" 
+                        onclick="borrar()">
                     </td>
                 </tr>
             </table>
