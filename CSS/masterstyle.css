@@ -1,39 +1,45 @@
 *{
     padding:0;
     margin: 0;
-    color: rgb(19, 6, 6);
-    text-align: center;
-
+    box-sizing: content-box;
+    font-family: 'Karantina', cursive;
+    color: white;
 }
 
-html, body{
-    background-color: rgb(255, 255, 255);
-
+nav{
+    height: 30px;
+    background-color: #620CE5;
+    color: white;
+    padding: 1rem;
+    text-align: center;
 }
 
 .main-container{
-    border: 10px solid rgb(175, 33, 151);
-    border-radius: 20px;
-    margin: 1rem;
-    background-color: rgb(235, 47, 235)
-
+    min-height: calc(100vh - 30px - 75px - 2rem - 5rem);
+    background: linear-gradient(to bottom, #620CE5, black);
+    padding: 2.5rem;
 }
 
-nav,section, footer, article, aside{
-    border: 2px solid rgb(138, 189, 0)
-    margin= 1rem;
-    border-radius: 10px;
-    padding: 1rem;
-}
-
-aside, article{
-    width: 40%;
-    display: inline-block;
+.contenido{
     font-size: 20px;
-    height: 350px;
-    background-color: rgb(32, 213, 183);
+    border: 10px;
+    border-radius: 10px;
+    background-color: black;
+}
+.main-container .contenido h3, h4{
+    padding-left: 1.5rem;
 }
 
-nav, section, footer{
-    background-color: rgb(255, 255, 255)
+a, li{
+    padding-left: 2rem;
+
+    list-style-type: none;
+}
+
+
+footer{
+    height: 75px;
+    background-color: black;
+    color: white;
+    text-align: center;
 }
