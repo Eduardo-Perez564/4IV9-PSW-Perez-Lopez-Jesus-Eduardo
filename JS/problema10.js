@@ -13,7 +13,7 @@ function validarn(e){
 }
 
 function Calcular_Utilidades(){
-    var Salario = parseFloat(document.formulario.salario.value);
+    var Salario = parseFloat    (document.formulario.salario.value);
     var Antiguedad = parseFloat(document.formulario.tiempo.value);
     var Utilidades;
 

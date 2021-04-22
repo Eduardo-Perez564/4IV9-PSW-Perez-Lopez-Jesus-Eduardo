@@ -1,5 +1,6 @@
 function validar(formulario){
 
+    alert("Bienvenida Emily :)")
     if(formulario.nombre.value.length < 5){
         
         alert("Escriba por lo menos 5 caracteres dentro del campo de nombre");
