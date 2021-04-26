@@ -13,7 +13,8 @@ init();
 function init(){
     iniciar.addEventListener('click', iniciarContador);
     resetear.addEventListener('click', resetearContador);
-    grabartear.addEventListener('click', grabarContador);
+    grabar.addEventListener('click', grabarContador);
+
 }
 
 function iniciarContador(){
@@ -23,7 +24,6 @@ function iniciarContador(){
             temporizador.innerHTML = tiempo.toFixed(2);
         }, 10)
         verificador = true;
-
     }else{
         verificador = false;
         clearInterval(intervalo);
@@ -40,15 +40,15 @@ function resetearContador(){
     }
 }
 
+
 function grabarContador(){
     if(temporizador.textContent === '0.00'){
         console.log('click para iniciar el cronometro');
     }else{
         let p = document.createElement('ul');
-        p.innerHtml = `
+        p.innerHTML = `
         
-        <li> Tiempo : ${timepo.toFixed(2)} </li>
-
+        <li> Tiempo : ${tiempo.toFixed(2)} </li>
         `;
         almacenarTiempos.appendChild(p);
     }
