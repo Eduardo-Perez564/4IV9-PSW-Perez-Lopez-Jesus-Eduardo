@@ -1,7 +1,14 @@
+:root{
+    --color-fondo: #11D835 ;
+}
+
 *{
     padding: 0;
     margin: 0;
     
+}
+body{
+    background: var(--color-fondo);
 }
 
 .inicio{
@@ -14,12 +21,12 @@
     padding-bottom: 10px;
     font-family: Tahoma;
     font-size: 25px;
-    background-color: rgb(163, 8, 91);
+    background-color: var(--color-fondo);
 }
 
 
 .Cuerpo form input{
-    background-color: rgb(163, 8, 91);
+    background-color: var(--color-fondo);
     width: 100% ;
     font-size: 20px;
     border: black 2px solid;
@@ -27,7 +34,7 @@
 }
 
 select{
-    background-color: rgb(218, 10, 121);
+    background-color: var(--color-fondo);
     width: 100% ;
     font-size: 20px;
     border: black 2px solid;
@@ -43,7 +50,7 @@ footer{
 }
     footer a{
         text-decoration: none;
-        color: white;
+        color: var(--color-fondo);
         
         font-family: Tahoma;
         font-size: 20px;
