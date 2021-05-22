@@ -146,7 +146,7 @@ P6_Depresion, P6_Ansiedad, P6_Trastornos_Alimenticios, P6_Estres, P6_Nada = P6_P
 P7_Si, P7_No = P7_Ayuda(0,0)
 
 f = open('Graficas.html', 'w')
-mensaje = """<html>
+mensaje = """<html lang="es">
   <head>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
