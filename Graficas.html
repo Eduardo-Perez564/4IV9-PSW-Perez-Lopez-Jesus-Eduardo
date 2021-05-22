@@ -1,0 +1,182 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['15-16', 52],
+          ['16-17', 18],
+          ['18-19', 4],
+          ['M�s de 20 a�os', 3],
+          ['Menos de 15 a�os', 0]
+        ]);
+
+        var options = {
+          title: 'Edad de las personas Encuestadas'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica1_Container'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['10 a 12 horas', 2],
+          ['8 horas', 11],
+          ['6 a 8 horas', 44],
+          ['Menos de 6 horas', 20]
+        ]);
+
+        var options = {
+          title: 'Promedio de tiempo que duermen las personas encuestadas'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica2_Container'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Menos de 8 horas', 20],
+          ['8 a 10 horas', 34],
+          ['10 a 12 horas', 18],
+          ['M�s de 12 horas', 5]
+        ]);
+
+        var options = {
+          title: 'Promedio de tiempo que le dedican al estudio las personas encuestadas'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica3_Container'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Primer Semestre', 4],
+          ['Segundo Semestre', 8],
+          ['Tercer Semestre', 2],
+          ['Cuarto Semestre', 55],
+          ['Quinto Semestre', 1],
+          ['Sexto Semestre', 7]
+        ]);
+
+        var options = {
+          title: 'Semestre que cursan las personas encuestadas'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica4_Container'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Excelente', 9],
+          ['Buena', 39],
+          ['Mala', 19],
+          ['P�sima', 10]
+        ]);
+
+        var options = {
+          title: 'Desarrollo de la situaci�n acad�mica en cuarentena y clases a distancia de las personas encuestadas'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica5_Container'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Depresi�n', 29],
+          ['Trastornos de Ansiedad', 36],
+          ['Trastornos Alimenticios', 17],
+          ['Estr�s', 65]
+        ]);
+
+        var options = {
+          title: 'Problemas psicol�gicos que han presentado las personas encuestadas'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica6_Container'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Si', 20],
+          ['No', 56]
+        ]);
+
+        var options = {
+          title: 'Cantidad de personas que pidieron ayuda profesional'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('Grafica7_Container'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+
+    <h1><center>Gr�ficas</center></h1>
+    <hr width = "80%" height = 25px>
+
+    <div id="Grafica1_Container" style="width: 800px; height: 500px;"></div>
+    <div id="Grafica2_Container" style="width: 800px; height: 500px;"></div>
+    <div id="Grafica3_Container" style="width: 800px; height: 500px;"></div>
+    <div id="Grafica4_Container" style="width: 800px; height: 500px;"></div>
+    <div id="Grafica5_Container" style="width: 800px; height: 500px;"></div>
+    <div id="Grafica6_Container" style="width: 800px; height: 500px;"></div>
+    <div id="Grafica7_Container" style="width: 800px; height: 500px;"></div>
+
+    <b><a href="index.html">Regresar al Inicio</a></b>
+  </body>
+</html>
